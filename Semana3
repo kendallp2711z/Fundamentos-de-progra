@@ -1,0 +1,43 @@
+ int cuenta = 1000;
+       String decision;
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Introduzca la accion que desee realizar");
+       decision = scanner.next();
+       while (decision.compareTo("s") != 0) {
+           if (decision.compareTo("d") == 0) {
+               System.out.print("Introduzca el monto a debitar: ");
+               int monto = scanner.nextInt();
+               
+               
+               
+               if (cuenta < monto) {
+                   System.out.println("¡Error! No tiene fondos suficientes");
+                   
+               } else {
+                   
+                   
+                   cuenta = cuenta - monto;
+                   System.out.println("Debito añadido, quedan : $" + cuenta);
+                   
+                   
+                   
+               }
+               
+               
+           } else if (decision.compareTo("c") == 0) {
+               System.out.print("Introduzca el monto a creditar: ");
+               int monto = scanner.nextInt();
+               cuenta = cuenta + monto;
+               System.out.println("¡Credito añadido! Quedan : $ " + cuenta);
+               
+           }
+           System.out.println("En Ciclo!");
+           System.out.println("Introduzca la accion que desee realizar");
+           decision = scanner.next();
+           
+       } System.out.println("¡Hasta Luego!");
+       
+       
+    }
+    
+}
