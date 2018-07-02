@@ -1,0 +1,14 @@
+       int Arreglo1[] = new int[10];
+       System.out.println("Arreglo:" );
+       for (int i = 0; i< Arreglo1.length; i++) {
+           Arreglo1[i] = (int)(Math.random()* 10);
+           
+       }
+       for (int j = 0; j< Arreglo1.length; j++) {
+           
+           System.out.println( Arreglo1[j]);
+       }
+  
+    }
+    
+}
