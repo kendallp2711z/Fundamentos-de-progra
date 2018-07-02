@@ -1,0 +1,10 @@
+String sTexto = "Isaac es gay y se la come";
+StringTokenizer frase = new StringTokenizer(sTexto);
+Stack<String> pila = new Stack<>();
+while (frase.hasMoreTokens()) {
+  pila.push(frase.nextToken());
+}
+while (!pila.empty())
+  System.out.print(pila.pop() + " ");
+    }
+}
